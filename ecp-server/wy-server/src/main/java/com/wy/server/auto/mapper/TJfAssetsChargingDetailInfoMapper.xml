@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TJfAssetsChargingDetailInfoMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.wy.server.auto.entity.TJfAssetsChargingDetailInfo">
+        <id column="id" property="id" />
+        <result column="charging_total_id" property="chargingTotalId" />
+        <result column="charging_type" property="chargingType" />
+        <result column="house_code" property="houseCode" />
+        <result column="building_name" property="buildingName" />
+        <result column="current_charging_fee" property="currentChargingFee" />
+        <result column="last_charging_id" property="lastChargingId" />
+        <result column="charging_status" property="chargingStatus" />
+        <result column="charging_detail" property="chargingDetail" />
+        <result column="audit_status" property="auditStatus" />
+        <result column="deductible_status" property="deductibleStatus" />
+        <result column="charging_time" property="chargingTime" />
+        <result column="is_create_bill" property="isCreateBill" />
+        <result column="create_time" property="createTime" />
+        <result column="create_id" property="createId" />
+        <result column="default_reading" property="defaultReading" />
+        <result column="ext_reading" property="extReading" />
+        <result column="ext_reading1" property="extReading1" />
+        <result column="ext_reading2" property="extReading2" />
+        <result column="reading_infos" property="readingInfos" />
+        <result column="current_bill_fee" property="currentBillFee" />
+        <result column="audit_time" property="auditTime" />
+        <result column="audit_uid" property="auditUid" />
+        <result column="audit_mode" property="auditMode" />
+        <result column="discount_amount" property="discountAmount" />
+        <result column="after_discount_amount" property="afterDiscountAmount" />
+        <result column="last_bill_fee" property="lastBillFee" />
+        <result column="late_fee" property="lateFee" />
+        <result column="share_fee" property="shareFee" />
+        <result column="last_payed" property="lastPayed" />
+    </resultMap>
+
+</mapper>
