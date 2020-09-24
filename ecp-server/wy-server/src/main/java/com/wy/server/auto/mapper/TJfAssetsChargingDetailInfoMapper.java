@@ -1,8 +1,9 @@
 package com.wy.server.auto.mapper;
 
-import com.wy.server.auto.entity.TJfAssetsChargingDetailInfo;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.ecp.common.entity.TJfAssetsChargingDetailInfo;
 import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Component;
 
 /**
  * <p>
@@ -10,9 +11,10 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author qhc
- * @since 2020-09-15
+ * @since 2020-09-24
  */
-@Mapper
+@Component
+//@Mapper
 public interface TJfAssetsChargingDetailInfoMapper extends BaseMapper<TJfAssetsChargingDetailInfo> {
 
 }

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcDelayAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcDelayAccount">
+        <id column="id" property="id" />
+        <result column="amount" property="amount" />
+        <result column="account_id" property="accountId" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="create_id" property="createId" />
+        <result column="create_time" property="createTime" />
+        <result column="modify_id" property="modifyId" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="account_type" property="accountType" />
+        <result column="house_code_new" property="houseCodeNew" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, amount, account_id, project_id, project_name, create_id, create_time, modify_id, modify_time, account_type, house_code_new
+    </sql>
+
+</mapper>

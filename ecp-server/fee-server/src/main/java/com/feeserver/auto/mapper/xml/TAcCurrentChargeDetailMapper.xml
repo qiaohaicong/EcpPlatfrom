@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcCurrentChargeDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcCurrentChargeDetail">
+        <id column="id" property="id" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="charge_amount" property="chargeAmount" />
+        <result column="account_id" property="accountId" />
+        <result column="account_type" property="accountType" />
+        <result column="charge_time" property="chargeTime" />
+        <result column="audit_time" property="auditTime" />
+        <result column="last_charge_id" property="lastChargeId" />
+        <result column="charge_detail" property="chargeDetail" />
+        <result column="common_dikou" property="commonDikou" />
+        <result column="special_dikou" property="specialDikou" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="create_id" property="createId" />
+        <result column="create_time" property="createTime" />
+        <result column="payed_amount" property="payedAmount" />
+        <result column="current_payment" property="currentPayment" />
+        <result column="assign_amount" property="assignAmount" />
+        <result column="update_time" property="updateTime" />
+        <result column="payable_amount" property="payableAmount" />
+        <result column="currenct_arreas" property="currenctArreas" />
+        <result column="business_type" property="businessType" />
+        <result column="opera_id" property="operaId" />
+        <result column="total_history_arrears" property="totalHistoryArrears" />
+        <result column="vir_ym" property="virYm" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, house_code_new, charge_amount, account_id, account_type, charge_time, audit_time, last_charge_id, charge_detail, common_dikou, special_dikou, project_id, project_name, create_id, create_time, payed_amount, current_payment, assign_amount, update_time, payable_amount, currenct_arreas, business_type, opera_id, total_history_arrears, vir_ym
+    </sql>
+
+</mapper>

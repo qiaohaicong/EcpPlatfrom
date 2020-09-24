@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcBusinessOperaDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcBusinessOperaDetail">
+        <id column="id" property="id" />
+        <result column="operation_id" property="operationId" />
+        <result column="operation_time" property="operationTime" />
+        <result column="business_type" property="businessType" />
+        <result column="amount" property="amount" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="remark" property="remark" />
+        <result column="signature" property="signature" />
+        <result column="person_type" property="personType" />
+        <result column="client_type" property="clientType" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, operation_id, operation_time, business_type, amount, project_id, project_name, remark, signature, person_type, client_type
+    </sql>
+
+</mapper>

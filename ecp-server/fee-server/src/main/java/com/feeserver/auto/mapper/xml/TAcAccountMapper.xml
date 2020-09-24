@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcAccountMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcAccount">
+        <id column="id" property="id" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="common_deposit_amount" property="commonDepositAmount" />
+        <result column="special_deposit_amount" property="specialDepositAmount" />
+        <result column="late_fee_amount" property="lateFeeAmount" />
+        <result column="current_charging_amount" property="currentChargingAmount" />
+        <result column="last_arrears_amount" property="lastArrearsAmount" />
+        <result column="current_bill_amount" property="currentBillAmount" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="create_time" property="createTime" />
+        <result column="create_id" property="createId" />
+        <result column="modify_time" property="modifyTime" />
+        <result column="modify_id" property="modifyId" />
+        <result column="signature" property="signature" />
+        <result column="charging_month" property="chargingMonth" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, house_code_new, common_deposit_amount, special_deposit_amount, late_fee_amount, current_charging_amount, last_arrears_amount, current_bill_amount, project_id, project_name, create_time, create_id, modify_time, modify_id, signature, charging_month
+    </sql>
+
+</mapper>

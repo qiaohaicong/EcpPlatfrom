@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcOrderMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcOrder">
+        <id column="id" property="id" />
+        <result column="order_no" property="orderNo" />
+        <result column="amount" property="amount" />
+        <result column="payer" property="payer" />
+        <result column="payer_mobile" property="payerMobile" />
+        <result column="order_state" property="orderState" />
+        <result column="pay_state" property="payState" />
+        <result column="order_type" property="orderType" />
+        <result column="update_time" property="updateTime" />
+        <result column="opera_id" property="operaId" />
+        <result column="signature" property="signature" />
+        <result column="payment_time" property="paymentTime" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="payment_channel" property="paymentChannel" />
+        <result column="is_rcorded" property="isRcorded" />
+        <result column="pay_channel_trade_no" property="payChannelTradeNo" />
+        <result column="is_delivery" property="isDelivery" />
+        <result column="delivery_no" property="deliveryNo" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, order_no, amount, payer, payer_mobile, order_state, pay_state, order_type, update_time, opera_id, signature, payment_time, house_code_new, payment_channel, is_rcorded, pay_channel_trade_no, is_delivery, delivery_no
+    </sql>
+
+</mapper>

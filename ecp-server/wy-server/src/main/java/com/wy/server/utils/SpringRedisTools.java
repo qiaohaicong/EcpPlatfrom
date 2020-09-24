@@ -1,38 +1,19 @@
 package com.wy.server.utils;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
-import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
-import org.springframework.data.redis.serializer.RedisSerializer;
-import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 @Component
 public class SpringRedisTools {
-    @Autowired
-    private RedisTemplate redisTemplate;
-//    @Autowired
-//    private JedisConnectionFactory jedisConnectionFactory;
-
-    @Autowired(required = false)
-    public void setRedisTemplate(RedisTemplate redisTemplate) {
-        //序列化为String
-        RedisSerializer stringSerializer = new StringRedisSerializer();
-        //序列化为Json
-        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
-        redisTemplate.setKeySerializer(stringSerializer);
-        redisTemplate.setValueSerializer(jackson2JsonRedisSerializer);
-        redisTemplate.setHashKeySerializer(stringSerializer);
-        redisTemplate.setHashValueSerializer(jackson2JsonRedisSerializer);
-        this.redisTemplate = redisTemplate;
-    }
+    //@Autowired默认按照类型装配的  @Resource，它默认按照名字装配
+    @Resource
+    private RedisTemplate<String,Object> redisTemplate;
 
     public boolean hasKey(String key){
         return redisTemplate.hasKey(key);

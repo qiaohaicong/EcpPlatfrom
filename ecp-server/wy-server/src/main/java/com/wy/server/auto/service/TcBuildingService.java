@@ -1,6 +1,7 @@
 package com.wy.server.auto.service;
 
-import com.wy.server.auto.entity.TcBuilding;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import com.ecp.common.entity.TcBuilding;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;
@@ -11,12 +12,12 @@ import java.util.List;
  * </p>
  *
  * @author qhc
- * @since 2020-09-15
+ * @since 2020-09-21
  */
 public interface TcBuildingService extends IService<TcBuilding> {
 
-    TcBuilding getTcBuildingById(String buildingId);
+    TcBuilding getTcBuildingByid(String buildingId);
 
-    List<TcBuilding> listPageTcBuilding();
+    List<TcBuilding> listPageTcBuilding(Page page);
 
 }

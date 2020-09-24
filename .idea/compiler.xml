@@ -7,12 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ecp-common" />
+        <module name="fee-server" />
         <module name="wy-server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="ecp-common" target="1.5" />
-      <module name="ecpcommon" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

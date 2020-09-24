@@ -1,6 +1,6 @@
 package com.wy.server.auto.service;
 
-import com.wy.server.auto.entity.TJfAssetsChargingDetailInfo;
+import com.ecp.common.entity.TJfAssetsChargingDetailInfo;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author qhc
- * @since 2020-09-15
+ * @since 2020-09-21
  */
 public interface TJfAssetsChargingDetailInfoService extends IService<TJfAssetsChargingDetailInfo> {
 

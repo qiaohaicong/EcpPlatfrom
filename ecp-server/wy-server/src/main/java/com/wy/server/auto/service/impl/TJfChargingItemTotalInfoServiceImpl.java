@@ -1,6 +1,6 @@
 package com.wy.server.auto.service.impl;
 
-import com.wy.server.auto.entity.TJfChargingItemTotalInfo;
+import com.ecp.common.entity.TJfChargingItemTotalInfo;
 import com.wy.server.auto.mapper.TJfChargingItemTotalInfoMapper;
 import com.wy.server.auto.service.TJfChargingItemTotalInfoService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author qhc
- * @since 2020-09-15
+ * @since 2020-09-21
  */
 @Service
 public class TJfChargingItemTotalInfoServiceImpl extends ServiceImpl<TJfChargingItemTotalInfoMapper, TJfChargingItemTotalInfo> implements TJfChargingItemTotalInfoService {

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcCommonAccountDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcCommonAccountDetail">
+        <id column="id" property="id" />
+        <result column="account_id" property="accountId" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="before_amount" property="beforeAmount" />
+        <result column="after_amount" property="afterAmount" />
+        <result column="change_amount" property="changeAmount" />
+        <result column="business_type" property="businessType" />
+        <result column="dikou_type" property="dikouType" />
+        <result column="bill_detail_id" property="billDetailId" />
+        <result column="description" property="description" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="create_time" property="createTime" />
+        <result column="create_id" property="createId" />
+        <result column="opera_id" property="operaId" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, account_id, house_code_new, before_amount, after_amount, change_amount, business_type, dikou_type, bill_detail_id, description, project_id, project_name, create_time, create_id, opera_id
+    </sql>
+
+</mapper>

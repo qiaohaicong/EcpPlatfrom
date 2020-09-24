@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcCycleOrderDetailMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcCycleOrderDetail">
+        <id column="detail_id" property="detailId" />
+        <result column="order_id" property="orderId" />
+        <result column="business_type" property="businessType" />
+        <result column="deposit_type" property="depositType" />
+        <result column="account_type" property="accountType" />
+        <result column="detail_amount" property="detailAmount" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="late_amount" property="lateAmount" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        detail_id, order_id, business_type, deposit_type, account_type, detail_amount, house_code_new, late_amount, create_time
+    </sql>
+
+</mapper>

@@ -27,10 +27,14 @@ public class Generator {
     private static String canonicalPath = "D:\\TestMySpringBoot\\ecp-server\\wy-server";
 
     //基本包名
-    private static String basePackage = "com.wy.server.auto";
+    private static String basePackage = "com.wy.server.auto.web";
 
     //要生成的表名
     private static String[] tables = {"t_jf_charging_item_total_info","t_jf_assets_charging_detail_info","tc_building"};
+//    ,
+//    "t_ac_account","t_ac_bill_detail","t_ac_bill_project","t_ac_business_opera_detail","t_ac_common_account_detail",
+//    "t_ac_current_charge_detail","t_ac_cycle_order_detail","t_ac_delay_account","t_ac_last_bill_fee_info","t_ac_late_fee_bill_info",
+//    "t_ac_late_fee_stream","t_ac_order",""};
     //table前缀，会在生成相应文件命名的时候去掉，这里不给
     private static String prefix = "";
 
@@ -120,7 +124,7 @@ public class Generator {
                         .setInclude(tables)
                         .setRestControllerStyle(true)
                         // 排除生成的表
-                        //.setExclude(new String[]{"test"})
+//                        .setExclude(tables)
                         // 自定义实体父类
                         // .setSuperEntityClass("com.baomidou.demo.TestEntity")
                         // 自定义实体，公共字段

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.wy.server.auto.mapper.TAcLateFeeStreamMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ecp.common.entity.TAcLateFeeStream">
+        <id column="id" property="id" />
+        <result column="delay_account_id" property="delayAccountId" />
+        <result column="house_code_new" property="houseCodeNew" />
+        <result column="before_amount" property="beforeAmount" />
+        <result column="after_amount" property="afterAmount" />
+        <result column="change_amount" property="changeAmount" />
+        <result column="business_type" property="businessType" />
+        <result column="project_id" property="projectId" />
+        <result column="project_name" property="projectName" />
+        <result column="create_time" property="createTime" />
+        <result column="create_id" property="createId" />
+        <result column="description" property="description" />
+        <result column="opera_id" property="operaId" />
+        <result column="principal_account" property="principalAccount" />
+        <result column="rate" property="rate" />
+        <result column="is_singleinterest" property="isSingleinterest" />
+        <result column="overdue_days" property="overdueDays" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, delay_account_id, house_code_new, before_amount, after_amount, change_amount, business_type, project_id, project_name, create_time, create_id, description, opera_id, principal_account, rate, is_singleinterest, overdue_days
+    </sql>
+
+</mapper>

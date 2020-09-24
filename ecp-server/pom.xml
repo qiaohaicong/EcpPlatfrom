@@ -13,6 +13,7 @@
     <artifactId>ecp-server</artifactId>
     <modules>
         <module>wy-server</module>
+        <module>fee-server</module>
     </modules>
 
 
