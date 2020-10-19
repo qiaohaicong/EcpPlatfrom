@@ -1,4 +1,4 @@
-package com.feeserver.auto.mapper;
+package com.feeserver.cluster.web;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.ecp.common.entity.TAcAccount;

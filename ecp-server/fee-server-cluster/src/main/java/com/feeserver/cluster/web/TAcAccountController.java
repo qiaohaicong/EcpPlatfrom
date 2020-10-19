@@ -1,8 +1,7 @@
-package com.feeserver.auto.controller;
+package com.feeserver.cluster.web;
 
 
 import com.ecp.common.entity.TAcAccount;
-import com.feeserver.auto.service.TAcAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

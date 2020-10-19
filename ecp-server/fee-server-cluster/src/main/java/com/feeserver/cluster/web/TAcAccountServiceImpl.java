@@ -1,10 +1,7 @@
-package com.feeserver.auto.service.impl;
+package com.feeserver.cluster.web;
 
-import com.ecp.common.entity.TAcAccount;
-import com.feeserver.auto.mapper.TAcAccountMapper;
-import com.feeserver.auto.service.TAcAccountService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import lombok.Builder;
+import com.ecp.common.entity.TAcAccount;
 import org.springframework.stereotype.Service;
 
 /**

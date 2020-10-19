@@ -1,7 +1,7 @@
 server:
-  port: 8899
+  port: 8800
 #  servlet:
-#    context-path: /nishidoubi
+#    context-path: /gundan
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver

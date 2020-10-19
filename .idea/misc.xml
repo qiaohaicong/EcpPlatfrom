@@ -10,6 +10,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/ecp-server/wy-server/pom.xml" />
         <option value="$PROJECT_DIR$/ecp-server/fee-server/pom.xml" />
+        <option value="$PROJECT_DIR$/ecp-server/fee-server-cluster/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,6 +2,7 @@ package com.feeserver.auto.mapper;
 
 import com.ecp.common.entity.TAcDelayAccount;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -11,6 +12,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
  * @author qhc
  * @since 2020-09-21
  */
+@Mapper
 public interface TAcDelayAccountMapper extends BaseMapper<TAcDelayAccount> {
 
 }

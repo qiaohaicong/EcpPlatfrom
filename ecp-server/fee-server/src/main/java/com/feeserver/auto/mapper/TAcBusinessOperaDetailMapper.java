@@ -3,6 +3,7 @@ package com.feeserver.auto.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.ecp.common.entity.TAcBusinessOperaDetail;
+import org.apache.ibatis.annotations.Mapper;
 
 /**
  * <p>
@@ -12,6 +13,7 @@ import com.ecp.common.entity.TAcBusinessOperaDetail;
  * @author qhc
  * @since 2020-09-21
  */
+@Mapper
 public interface TAcBusinessOperaDetailMapper extends BaseMapper<TAcBusinessOperaDetail> {
 
 }

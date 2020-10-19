@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * @since 2020-09-24
  */
 @Component
-//@Mapper
+@Mapper
 public interface TJfChargingItemTotalInfoMapper extends BaseMapper<TJfChargingItemTotalInfo> {
 
 }

@@ -1,7 +1,7 @@
-package com.feeserver.auto.service;
+package com.feeserver.cluster.web;
 
-import com.ecp.common.entity.TAcAccount;
 import com.baomidou.mybatisplus.extension.service.IService;
+import com.ecp.common.entity.TAcAccount;
 
 /**
  * <p>

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="ecp-common" />
         <module name="fee-server" />
+        <module name="fee-server-cluster" />
         <module name="wy-server" />
       </profile>
     </annotationProcessing>

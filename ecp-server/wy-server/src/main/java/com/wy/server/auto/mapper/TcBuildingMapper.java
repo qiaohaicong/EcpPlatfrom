@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
  * @since 2020-09-24
  */
 @Component
-//@Mapper
+@Mapper
 public interface TcBuildingMapper extends BaseMapper<TcBuilding> {
 
     Page<TcBuilding> listPageTcBuilding(Page<TcBuilding> page, @Param("isCharge") String isCharge);
